@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: E:/AndreyAleshin/LabWork/java/src/com/braincad/andreyaa/MANIFEST.java
+Main-Class: com.exec.Main

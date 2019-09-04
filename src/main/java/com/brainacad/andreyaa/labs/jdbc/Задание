@@ -1,0 +1,19 @@
+1) Установить СУБД PostgreSQL
+2) Создать БД в PgAdmin
+3) Выполнить SQL запросы из ЛР, для инициализации БД
+4) Выполнить подключение к БД с помощью JDBC (JdbcConnector). Необходимо указать свои данные для подключения.
+5) Проверить работу добавления и чтения данных в БД (JdbcInsert).
+6) Реализовать DTO классы (Purchase, PurchaseItem, User) в соответствии с БД.
+7) Реализовать бизнес-логику работы с БД (JdbcStore)
+7.1) Подключиться к БД используя JdbcConnector
+7.2) Создать несколько произвольных обьектов DTO (Purchase, PurchaseItem, User). 2-3 пользователя, 5-6 товаров, 1-2 заказа для каждого пользователя.
+7.3) Реализовать методы записи DTO Объектов в БД:
+	User insertUser(User user);
+	Product insertProduct(Product product);
+	Purchase insertPurchase(Purchase purchase);
+	PurchaseItem insertPurchaseItem(PurchaseItem purchaseItem);
+7.4) Записать созданные объекты в БД.
+7.5*) Написать SELECT запрос, на получение всех заказов с товарами пользователя, по id пользователя.
+8) Создать дамп вашей БД с помощью PgAdmin и также восстановить ее в новую БД.
+9*) Написать новый SQL запрос на создание таблицы категорий товаров "categories".
+10*) Добавить внешний ключ "category_id" для таблицы "store.products", связать с id таблицы "categories".
