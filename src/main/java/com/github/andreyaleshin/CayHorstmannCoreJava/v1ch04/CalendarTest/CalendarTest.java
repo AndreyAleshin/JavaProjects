@@ -1,4 +1,4 @@
-package com.github.andreyaleshin.CayHorstmannCoreJava.v1ch04;
+package com.github.andreyaleshin.CayHorstmannCoreJava.v1ch04.CalendarTest;
 
 import java.time.*;
 
