@@ -9,15 +9,16 @@ public class lab1_4_4 {
         b = ++a;
         System.out.print("Increment in prefix form: ");
         System.out.println(a +" "+ b);
-//        b = a++;
-//        System.out.print("Increment in postfix form: ");
-//        System.out.println(a +" "+ b);
+        b = a++;
+        System.out.print("Increment in postfix form: ");
+        System.out.println(a +" "+ b);
 
 //        b = --a;
 //        System.out.print("Decrement in prefix form: ");
-//        System.out.print(a +" "+ b);
+//        System.out.println(a +" "+ b);
 //        b = a--;
 //        System.out.print("Decrement in postfix form: ");
-//        System.out.print(a +" "+ b);
+//        System.out.println(a +" "+ b);
+
     }
 }

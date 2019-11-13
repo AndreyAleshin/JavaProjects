@@ -65,5 +65,6 @@ public class MainForComputer {
 //
 //        System.out.println("Here are the specs of PC №5: \n");
 //        computers[4].view();
+
     }
 }

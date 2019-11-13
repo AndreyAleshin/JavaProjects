@@ -15,10 +15,12 @@ public class MainForBus {
         person.setAge(45);
         person.setGender("M");
         person.setYearOfBirth(1973);
+
         System.out.println("Name of the bus driver: " + person.getName());
         System.out.println("Age: " + person.getAge());
         System.out.println("Gender: " + person.getGender());
         System.out.println("Year of birth: " + person.getYearOfBirth());
         System.out.println("Amount of seats remaining in the bus: " + bus.getSeats());
+
     }
 }

@@ -37,5 +37,6 @@ public class Lab3Test {
         System.out.println(harmonicProgression(2, 4, 5));
         System.out.print("Arithmetic progression: ");
         System.out.println(arithmeticProgression(2,4,5));
+
     }
 }

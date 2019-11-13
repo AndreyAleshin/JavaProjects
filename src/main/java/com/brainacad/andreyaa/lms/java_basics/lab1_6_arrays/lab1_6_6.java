@@ -8,8 +8,10 @@ public class lab1_6_6 {
         double[] temperatureArray = {-6.5, -6.7, -1.4, 6.6, 13.1, 17.0,
                 19.3, 17.4, 11.3, 6.0, -1.2, -5.3};
         Arrays.sort(temperatureArray);
-        for (double values : temperatureArray) {
-            System.out.println(values);
+
+        for (double temperatures : temperatureArray) {
+            System.out.println(temperatures);
         }
+
     }
 }

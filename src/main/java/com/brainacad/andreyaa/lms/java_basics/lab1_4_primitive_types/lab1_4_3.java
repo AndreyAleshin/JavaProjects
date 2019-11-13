@@ -4,7 +4,7 @@ public class lab1_4_3 {
     public static void main(String[] args) {
 
         boolean x = true;
-        boolean y = false;
+        boolean y = true;
 
         System.out.print("AND: ");
         System.out.println(x & y);
@@ -18,5 +18,6 @@ public class lab1_4_3 {
 
         System.out.print("XOR: ");
         System.out.println(x ^ y);
+
     }
 }

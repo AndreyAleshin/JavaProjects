@@ -10,10 +10,12 @@ public class lab1_5_3 {
 
         int mult = 1;
         System.out.print("* | ");
+
         for (int i = 1; i <= 9; i++) {
             System.out.print(i + " |    \t");
         }
         System.out.println();
+
         System.out.println("======================================" +
                 "=================================");
 
@@ -25,5 +27,6 @@ public class lab1_5_3 {
             }
             System.out.println();
         }
+
     }
 }

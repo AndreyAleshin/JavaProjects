@@ -6,10 +6,11 @@ public class lab1_5_2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter a number x: ");
         int x = sc.nextInt();
 
-        if (x==1) {
+        if (x == 1) {
             System.out.println("One");
         } else if (x == 2) {
             System.out.println("Two");
@@ -62,5 +63,6 @@ public class lab1_5_2 {
 //            default:
 //                System.out.println("Other");
 //        }
+
     }
 }

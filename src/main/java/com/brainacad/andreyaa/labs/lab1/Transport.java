@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public abstract class Transport {
 
-    public static final double HP_RATIO = 1.35_96d;// For kw to hp.
+    public static final double HP_RATIO = 1.35_96d; // For kw to hp.
 
     // Basic transport properties
     private final TransportType type;
@@ -28,13 +28,15 @@ public abstract class Transport {
 
     private Integer passengers;
 
-    public Transport(final TransportType type, final String name) //for create like new Transport(...)
-    {
+    // for create like new Transport(...)
+    public Transport(final TransportType type, final String name) {
+
         this.type = type;
         this.name = name;
 
         // start engine on create.
         startEngine();
+
     }
 
     /**
@@ -68,34 +70,28 @@ public abstract class Transport {
     }
 
     // Getters and setters
-
-    public float getPower()
-    {
+    public float getPower() {
         return power;
     }
 
-    public void setPower(final float power)
-    {
+    public void setPower(final float power) {
         this.power = power;
     }
 
-    public int getMaxSpeed()
-    {
+    public int getMaxSpeed() {
         return maxSpeed;
     }
 
-    public void setMaxSpeed(final int maxSpeed)
-    {
+    public void setMaxSpeed(final int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
 
-    public Integer getPassengers()
-    {
+    public Integer getPassengers() {
         return passengers;
     }
 
-    public void setPassengers(final Integer passengers)
-    {
+    public void setPassengers(final Integer passengers) {
         this.passengers = passengers;
     }
+
 }

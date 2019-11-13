@@ -20,5 +20,6 @@ public class lab1_4_2 {
 
         System.out.print("Percentage of division (the remainder): ");
         System.out.println(a % b);
+
     }
 }

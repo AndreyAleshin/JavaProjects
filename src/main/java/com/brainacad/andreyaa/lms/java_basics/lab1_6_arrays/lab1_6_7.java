@@ -19,5 +19,6 @@ public class lab1_6_7 {
             }
             System.out.println();
         }
+
     }
 }

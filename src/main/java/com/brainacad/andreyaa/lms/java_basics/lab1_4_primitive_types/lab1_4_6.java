@@ -11,5 +11,6 @@ public class lab1_4_6 {
         System.out.println(a ^ b);
         System.out.println(~a);
         System.out.println(~b);
+
     }
 }

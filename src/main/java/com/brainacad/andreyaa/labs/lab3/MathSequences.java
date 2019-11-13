@@ -14,9 +14,9 @@ public final class MathSequences {
      * @param values values sequence
      * @return sum result.
      */
-    public static int sum(int ...values) {
+    public static int sum(int... values) {
         int result = 0;
-        for (int a: values) {
+        for (int a : values) {
             result += a;
         }
         return result;
@@ -28,9 +28,9 @@ public final class MathSequences {
      * @param values values sequence
      * @return multiply result.
      */
-    public static int mul(int ...values) {
+    public static int mul(int... values) {
         int result = 1;
-        for (int a: values) {
+        for (int a : values) {
             result *= a;
         }
         return result;
@@ -40,10 +40,10 @@ public final class MathSequences {
      * Print all numbers unless {@param interrupt }
      *
      * @param skipValue skipped value
-     * @param values  values sequence
+     * @param values    values sequence
      */
-    public static void printWithSkip(int skipValue, int ...values) {
-        for (int a: values) {
+    public static void printWithSkip(int skipValue, int... values) {
+        for (int a : values) {
             if (a == skipValue) {
                 continue;
             }
@@ -55,10 +55,10 @@ public final class MathSequences {
      * Prints all numbers before reaching a set value {@param interrupt }
      *
      * @param interruptValue force end value
-     * @param values  values sequence
+     * @param values         values sequence
      */
-    public static void printToValue(int interruptValue, int ...values) {
-        for(int a: values) {
+    public static void printToValue(int interruptValue, int... values) {
+        for (int a : values) {
             System.out.print(a + " ");
             if (a == interruptValue) {
                 break;
@@ -74,13 +74,13 @@ public final class MathSequences {
      */
     public static int defineFigureTops(String name) {
         switch (name.toLowerCase()) {
-            case "triangle" :
+            case "triangle":
                 return 3;
-            case "square" :
-            case "rectangle" :
-            case "parallelogram" :
+            case "square":
+            case "rectangle":
+            case "parallelogram":
                 return 4;
-            case "circle" :
+            case "circle":
                 return 0;
             default:
                 System.out.println("Unknown figure!");
@@ -106,8 +106,8 @@ public final class MathSequences {
     /**
      * Calculates harmonic progression for value with ratio.
      *
-     * @param b base value
-     * @param q ratio
+     * @param b     base value
+     * @param q     ratio
      * @param count calc count
      * @return harmonic progression result.
      */
@@ -123,8 +123,8 @@ public final class MathSequences {
     /**
      * Calculates arithmetic progression for value with ratio.
      *
-     * @param a base value
-     * @param q ratio
+     * @param a     base value
+     * @param q     ratio
      * @param count calc count
      * @return arithmetic progression result.
      */
@@ -140,5 +140,7 @@ public final class MathSequences {
     /**
      * Denies to create instance of this class.
      */
-    private MathSequences() { }
+    private MathSequences() {
+    }
+
 }

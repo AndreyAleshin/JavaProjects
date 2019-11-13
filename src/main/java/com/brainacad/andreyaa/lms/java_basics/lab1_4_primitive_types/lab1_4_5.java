@@ -12,5 +12,6 @@ public class lab1_4_5 {
         System.out.println(a >> b / 2);
         System.out.println(a >>> b * 2);
         System.out.println(a >>> b / 2);
+
     }
 }

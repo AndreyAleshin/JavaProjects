@@ -55,4 +55,5 @@ public class Computer {
         System.out.print("CPU quantity is: " + getQuantityCPU() + " star(s)\n");
         System.out.print("CPU frequency: " + getFrequencyCPU() + "\n");
     }
+
 }

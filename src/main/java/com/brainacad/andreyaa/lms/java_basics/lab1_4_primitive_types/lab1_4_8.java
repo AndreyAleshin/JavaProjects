@@ -10,17 +10,17 @@ public class lab1_4_8 {
         int i2 = (int) 111_222L;
         System.out.println(i2);
 
-        byte b = 15;
-        System.out.println(b);
-        short s1 = (short) b;
-        System.out.println(s1);
-        short s2 = (short) 15;
-        System.out.println(s2);
+        short s = 15;
+        System.out.println(s);
+        byte b1 = (byte) s;
+        System.out.println(b1);
+        byte b2 = (byte) 15;
+        System.out.println(b2);
 
-        char c = '2';
-        System.out.println(c);
-        double d = (double) c;
+        double d = 50;
         System.out.println(d);
+        char c = (char) d;
+        System.out.println(c);
 
     }
 }

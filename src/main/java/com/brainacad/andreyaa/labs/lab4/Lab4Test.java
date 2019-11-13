@@ -14,7 +14,7 @@ public class Lab4Test {
         // PART 1
         // 1.1)
         System.out.println("PART 1\n" + "\nTask 1.1\n");
-        float[] firstArray = new float [4];
+        float[] firstArray = new float[4];
         firstArray[0] = 3.2f;
         firstArray[1] = -7.1f;
         firstArray[2] = 9.9f;
@@ -41,7 +41,7 @@ public class Lab4Test {
 
         // 1.5)
         System.out.println("\nTask 1.5\n");
-        if (Arrays.equals(intArray,intArrayCopy)) {
+        if (Arrays.equals(intArray, intArrayCopy)) {
             System.out.println("Arrays are equal");
         } else {
             System.out.println("Arrays are not equal\n");
@@ -52,7 +52,7 @@ public class Lab4Test {
         System.out.println("\nPART 2\n" + "\nTask 2.1\n");
         int[] testArray = {1, 3, 5, 7, 8, 6, 4, 2, 0};
         System.out.println("Initial Array (testArray): ");
-        for (int value: testArray) {
+        for (int value : testArray) {
             System.out.print(value + " ");
         }
         System.out.println();
@@ -60,7 +60,7 @@ public class Lab4Test {
         // 2.1)
         System.out.println("\nTask 2.1\n");
         int sum1 = 0;
-        for (int value: testArray) {
+        for (int value : testArray) {
             sum1 += value;
         }
         System.out.println("Sum of all elements in testArray: " + sum1);
@@ -89,7 +89,7 @@ public class Lab4Test {
         System.out.println("\nPART 3");
 
         //3.1
-        int [][] twoDimArray = {
+        int[][] twoDimArray = {
                 {-9, 1, 0, 7},
                 {8, -5, 3, 2},
                 {-6, 1, 8, 4}
@@ -123,7 +123,7 @@ public class Lab4Test {
         long sum4 = 0;
         long max2;
         max2 = matrix[0][0];
-        for (long[] row: matrix ) {
+        for (long[] row : matrix) {
             Arrays.fill(row, ++ratio);
         }
         for (int i = 0; i < matrix.length; i++) {
@@ -142,5 +142,7 @@ public class Lab4Test {
             }
         }
         System.out.println("\nSum of max and min values is: " + sum4);
+
     }
+
 }

@@ -20,4 +20,5 @@ public class Bus {
     public void setDriver(Person driver) {
         this.driver = driver;
     }
+
 }

@@ -2,11 +2,11 @@ package com.brainacad.andreyaa.lms.java_basics.lab2_3_constructors;
 
 public class MyWindow {
 
-    double width;
-    double height;
-    int numberOfGlass;
-    String color;
-    boolean isOpen;
+    private double width;
+    private double height;
+    private int numberOfGlass;
+    private String color;
+    private boolean isOpen;
 
 
     public MyWindow(double width) {
@@ -87,6 +87,7 @@ public class MyWindow {
         this(width, height, numberOfGlass, color);
         this.isOpen = isOpen;
     }
+
 }
 
 class Test {
@@ -123,10 +124,22 @@ class Test {
 //        MyWindow myWindow = new MyWindow(3.5, 4f, 4, "red", true);
 //        myWindow.printFields();
 
+
         // Lab Work 2-3-5
-//        for (MyWindow myWindow: MyWindow[]){
-//            myWindow = new MyWindow(2.5);
-//            System.out.println();
-//        }
+        MyWindow[] myWindow = new MyWindow[4];
+
+        myWindow[0] = new MyWindow(5.0, 4.0);
+        myWindow[1] = new MyWindow(5.0, 4.0,3);
+        myWindow[2] = new MyWindow(5.0, 4.0,3,"white");
+        myWindow[3] = new MyWindow(5.0, 4.0, 3, "white", true);
+
+        myWindow[0].printFields();
+        System.out.println();
+        myWindow[1].printFields();
+        System.out.println();
+        myWindow[2].printFields();
+        System.out.println();
+        myWindow[3].printFields();
+
     }
 }

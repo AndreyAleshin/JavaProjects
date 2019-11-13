@@ -14,7 +14,6 @@ public class Employee {
     }
 
     public double calcSalary(double... salary) {
-
         double sumSalary = 0;
         for (double s : salary) {
             sumSalary += s;

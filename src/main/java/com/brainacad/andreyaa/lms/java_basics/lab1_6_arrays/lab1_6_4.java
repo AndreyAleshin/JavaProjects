@@ -14,5 +14,6 @@ public class lab1_6_4 {
         int searchVal = 12;
         int retVal = Arrays.binarySearch(intArr, searchVal);
         System.out.println("The index of element " + searchVal + " is: " + retVal);
+
     }
 }

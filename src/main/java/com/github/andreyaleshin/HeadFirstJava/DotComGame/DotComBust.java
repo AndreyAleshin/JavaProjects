@@ -86,6 +86,7 @@ public class DotComBust {
         }
         // Выводим для пользователя результат
         System.out.println(result);
+
     }
 
     private void finishGame() {
@@ -101,6 +102,7 @@ public class DotComBust {
             System.out.println("It took you a lot of time. " + numOfGuesses + " attempts.");
             System.out.println("Now your investments are deep in the ocean.");
         }
+
     }
 
     public static void main(String[] args) {

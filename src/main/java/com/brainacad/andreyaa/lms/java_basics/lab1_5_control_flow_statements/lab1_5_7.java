@@ -9,6 +9,7 @@ public class lab1_5_7 {
         System.out.println("Enter the number: ");
         int n = sc.nextInt();
         int sum;
+
         for (int i = 1; i < n; i++) {
             sum = 0;
             for (int j = 1; j < i; j++) {
@@ -20,5 +21,6 @@ public class lab1_5_7 {
                 System.out.printf("%d ", i);
             }
         }
+
     }
 }
