@@ -34,7 +34,7 @@ public class ActionApp2 extends JFrame {
     }
 
     public static void main(String[] args) {
-
         new ActionApp2("Action application №2");
     }
+
 }

@@ -22,5 +22,6 @@ public class Client {
                 if (userInput.equalsIgnoreCase("exit")) break;
             }
         }
+
     }
 }
