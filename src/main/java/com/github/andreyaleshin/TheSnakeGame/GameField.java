@@ -99,6 +99,7 @@ public class GameField extends JPanel implements ActionListener {
             y[i] = y[i - 1];
         }
 
+        // x[0], y[0] - считать, как голова, x[1,2...], y[1,2...] - как тело
         if (left) x[0] -= DOT_SIZE;
         if (right) x[0] += DOT_SIZE;
         if (up) y[0] -= DOT_SIZE;

@@ -1,7 +1,9 @@
 package com.brainacad.andreyaa.misc;
 
 public class Help {
+
     void helpOn(int what) {
+
         switch (what) {
             case '1':
                 System.out.println("Оператор if: \n");
@@ -41,7 +43,9 @@ public class Help {
                 System.out.println("continue; или continue метка;");
                 break;
         }
+
         System.out.println();
+
     }
 
     void showMenu() {
@@ -60,4 +64,5 @@ public class Help {
         if (ch < '1' | ch > '7' & ch != 'q') return false;
         else return true;
     }
+
 }
