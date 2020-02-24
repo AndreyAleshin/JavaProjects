@@ -40,13 +40,13 @@ abstract class Shape implements Drawable {
         int counter1 = 0;
         while (stringTokenizer1.hasMoreElements()) {
             parametersOfIncomingLine[counter1] = String.valueOf(stringTokenizer1.nextElement());
-            counter1 = counter1 + 1;
+            counter1++;
         }
 
         int counter2 = 0;
         while (stringTokenizer2.hasMoreElements()) {
             numericalParameters[counter2] = String.valueOf(stringTokenizer2.nextElement());
-            counter2 = counter2 + 1;
+            counter2++;
         }
 
         String typeObject = parametersOfIncomingLine[0];

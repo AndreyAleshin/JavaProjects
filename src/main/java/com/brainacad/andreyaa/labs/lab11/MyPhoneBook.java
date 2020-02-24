@@ -1,6 +1,6 @@
 package com.brainacad.andreyaa.labs.lab11;
 
-public class MyPhoneBook {
+class MyPhoneBook {
 
     private PhoneNumber[] phoneNumbers = new PhoneNumber[10];
 
@@ -23,7 +23,7 @@ public class MyPhoneBook {
         }
     }
 
-    class PhoneNumber {
+    static class PhoneNumber {
 
         private String name;
         private String phone;

@@ -36,9 +36,9 @@ class ShowBits {
 class ShowBitsDemo {
     public static void main(String[] args) {
 
-        ShowBits b=new ShowBits(8);
-        ShowBits i=new ShowBits(32);
-        ShowBits li=new ShowBits(64);
+        ShowBits b = new ShowBits(8);
+        ShowBits i = new ShowBits(32);
+        ShowBits li = new ShowBits(64);
 
         System.out.println("123 в двоичном представлении: ");
         b.show(123);
@@ -52,5 +52,6 @@ class ShowBitsDemo {
         // Можно также отобразить младшие разряды любого целого числа
         System.out.println("\nМладшие 8 битов числа 87987 в двочином представлении: ");
         b.show(87987);
+
     }
 }

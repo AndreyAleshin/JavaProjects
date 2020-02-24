@@ -72,7 +72,7 @@ public class Main {
         // Lab 2-10-5
         System.out.println("------------ Lab 2-10-5 ------------");
 
-        Integer countOfShapes = 0;
+        int countOfShapes = 0;
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the count of objects to create: ");

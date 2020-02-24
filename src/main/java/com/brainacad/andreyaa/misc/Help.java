@@ -1,6 +1,6 @@
 package com.brainacad.andreyaa.misc;
 
-public class Help {
+class Help {
 
     void helpOn(int what) {
 
