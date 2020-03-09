@@ -1,4 +1,4 @@
-package com.brainacad.andreyaa.lms.java_fundamentals.lab2_12_nested_classes.lab2_12_1_and_2;
+package com.brainacad.andreyaa.lms.java_fundamentals.lab2_12_nested_classes.lab2_12_1_2;
 
 import java.util.Arrays;
 import java.util.Comparator;

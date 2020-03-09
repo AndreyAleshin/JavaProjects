@@ -2,17 +2,17 @@ package com.brainacad.andreyaa.labs.lab13;
 
 import java.util.*;
 
-public class MainCollections {
+class MainCollections {
 
     public static void main(String[] args) {
 
         System.out.println("LIST\n");
 
-        //LR12 (Collections)
-        //1a
+        // LR12 (Collections)
+        // 1a
         List<String> list1 = new ArrayList<>();
 
-        //1b
+        // 1b
         String[] stringArr = new String[]{"audi", "bmw", "mercedes", "ferrari", "mitsubishi"};
 
         System.out.print("Initial string array:                    ");
@@ -22,27 +22,27 @@ public class MainCollections {
         Collections.addAll(list1, stringArr);
         System.out.println(list1);
 
-        //1c
+        // 1c
         System.out.print("\nCreating new list2\n" + "initializing it with list1:              ");
-        List<String> list2 = new ArrayList<>(list1); // Or it is similar to code below
+        List<String> list2 = new ArrayList<>(list1); // Or it is similar to the code below
 
 //        for (String s : list1) {
 //            list2.add(s);
 //        }
         System.out.println(list2 + "\n");
 
-        //1d
+        // 1d
         System.out.print("Creating list3 using Arrays.asList():    ");
         List<String> list3 = Arrays.asList(stringArr);
         //list3.addAll(Arrays.asList(stringArr));
         System.out.println(list3 + "\n");
 
-        //1e
+        // 1e
         System.out.println("Inserting list3 in the middle of list2: ");
         list2.addAll(list2.size() / 2, list3);
         System.out.println(list2);
 
-        //1f*
+        // 1f*
         ListIterator<String> itr = list2.listIterator();
 
         int i = 0;
@@ -60,42 +60,42 @@ public class MainCollections {
         System.out.println("\nRemoving every second element in list2 using ListIterator: \n" + list2);
         System.out.println();
 
-        //2a
+        // 2a
         System.out.println("\nHASHSET\n");
         Set<String> set1 = new HashSet<>();
 
         String string1 = "summer";
         String string2 = "winter";
 
-        //2b
+        // 2b
         System.out.println("Inserting to set1 two strings:");
         set1.add(string1);
         set1.add(string2);
         System.out.println(set1 + "\n");
 
-        //2c
+        // 2c
         System.out.println("Adding to set1 all of list1 and list2 elements:");
         set1.addAll(list1);
         set1.addAll(list2);
-        //2d
+        // 2d
         System.out.println(set1 + "\n");
 
-        //2e
+        // 2e
         System.out.println("LINKEDHASHSET\n");
         Set<String> set2 = new LinkedHashSet<>();
 
-        //2f
+        // 2f
         System.out.println("Adding to set2 all of list2 and list3 elements:");
         set2.addAll(list2);
         set2.addAll(list3);
         System.out.println(set2 + "\n");
 
 
-        //3a
+        // 3a
         System.out.println("\nLINKEDHASHMAP\n");
         Map<Integer, String> map1 = new LinkedHashMap<>();
 
-        //3b
+        // 3b
         map1.put(1, "January");
         map1.put(2, "February");
         map1.put(3, "March");
@@ -109,26 +109,26 @@ public class MainCollections {
         map1.put(11, "November");
         map1.put(12, "December");
 
-        //3c
+        // 3c
         System.out.println(map1.get(1)); // if get(0) => null
         System.out.println(map1.get(12));
 
-        //3d
+        // 3d
         map1.put(6, "VACATION");
         System.out.println(map1 + "\n");
 
-        //3e
+        // 3e
         System.out.println("HASHMAP\n");
         Map<Integer, String> map2 = new HashMap<>(map1);
 
-        //3g*
+        // 3g*
         System.out.println("MAP1");
         printMap(map1);
         System.out.println("\nMAP2");
         printMap(map2);
         System.out.println();
 
-        //3h*
+        // 3h*
         Map<String, Set> map3 = new HashMap<>();
         Set<String> contacts = new HashSet<>();
         contacts.add("067-111-22-33");
@@ -142,10 +142,11 @@ public class MainCollections {
 
     }
 
-    //3g*
-    public static <T, S> void printMap(Map<T, S> map) {
-        for (Map.Entry<T, S> entryMap : map.entrySet()) {
+    // 3g*
+    private static <K, V> void printMap(Map<K, V> map) {
+        for (Map.Entry<K, V> entryMap : map.entrySet()) {
             System.out.println(entryMap.getKey() + ". " + entryMap.getValue());
         }
     }
+
 }

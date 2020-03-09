@@ -1,6 +1,6 @@
 package com.brainacad.andreyaa.lms.java_fundamentals.lab2_13_enums.lab2_13_1_2_3;
 
-public enum MyDayOfTheWeek {
+enum MyDayOfTheWeek {
 
     SUNDAY,
     MONDAY,

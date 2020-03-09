@@ -75,7 +75,7 @@ public class Main {
         int countOfShapes = 0;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the count of objects to create: ");
+        System.out.print("Enter the amount of objects to create: ");
         if (sc.hasNext()) {
             countOfShapes = Integer.parseInt(sc.nextLine());
         }

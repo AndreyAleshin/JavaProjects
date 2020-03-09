@@ -2,7 +2,7 @@ package com.brainacad.andreyaa.labs.lab13;
 
 import java.util.Objects;
 
-public class User {
+class User {
 
     private String name;
     private Integer age; // old
@@ -37,4 +37,5 @@ public class User {
     public int hashCode() {
         return Objects.hash(name, age, phone);
     }
+
 }

@@ -3,7 +3,8 @@ package com.brainacad.andreyaa.labs.lab13;
 import java.util.HashSet;
 import java.util.Set;
 
-public class MainUser {
+class MainUser {
+
     public static void main(String[] args) {
 
         Set<User> userSet = new HashSet<>();
@@ -19,5 +20,7 @@ public class MainUser {
         for (User user : userSet) {
             System.out.println(user);
         }
+
     }
+
 }

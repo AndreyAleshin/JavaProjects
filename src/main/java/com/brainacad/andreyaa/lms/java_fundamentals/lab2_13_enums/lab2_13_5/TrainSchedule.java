@@ -1,31 +1,71 @@
 package com.brainacad.andreyaa.lms.java_fundamentals.lab2_13_enums.lab2_13_5;
 
-import com.brainacad.andreyaa.lms.java_fundamentals.lab2_13_enums.lab2_13_1_2_3.MyDayOfTheWeek;
-
 import java.time.DayOfWeek;
-import java.util.Arrays;
 import java.util.Scanner;
 
 class TrainSchedule {
 
     private Train[] trains;
 
-    public TrainSchedule(Train[] trains) {
+    TrainSchedule(Train[] trains) {
         this.trains = trains;
     }
 
     void addTrain() {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int number = scanner.nextInt();
-        String stationDispatch = scanner.nextLine();
-        String stationArrival = scanner.nextLine();
-        String timeDispatch = scanner.nextLine();
-        String timeArrival = scanner.nextLine();
+        for (int i = 0; i < trains.length; i++) {
+            trains[i] = new Train();
 
+            System.out.print("Enter a train number: ");
+            int number = sc.nextInt();
+            trains[i].setNumber(number);
+
+            System.out.print("Enter station of dispatch: ");
+            String stationDispatch = sc.next();
+            trains[i].setStationDispatch(stationDispatch);
+
+            System.out.print("Enter station of arrival: ");
+            String stationArrival = sc.next();
+            trains[i].setStationArrival(stationArrival);
+
+            System.out.print("Enter time of dispatch: ");
+            String timeDispatch = sc.next();
+            trains[i].setTimeDispatch(timeDispatch);
+
+            System.out.print("Enter time of arrival: ");
+            String timeArrival = sc.next();
+            trains[i].setTimeArrival(timeArrival);
+
+            System.out.print("Enter a day of dispatch: ");
+            try {
+                DayOfWeek dayOfDispatch = DayOfWeek.valueOf(sc.next().toUpperCase());
+                trains[i].setDayOfDispatch(dayOfDispatch);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Please type correct day of the week");
+            }
+
+            System.out.println();
+        }
+
+        sc.close();
 
     }
+
+    void printTrains() {
+        for (Train train : trains) {
+            System.out.println(train.toString());
+        }
+    }
+
+    // Need to implement equals() method in Train class
+//    Train searchTrain(TrainSchedule trainSchedule, String stationDispatch, DayOfWeek day) {
+//        if (trainSchedule..equals(stationDispatch) && day.equals(day)) {
+//            return new Train();
+//        }
+//        return null;
+//    }
 
 
     class Train {
@@ -35,12 +75,11 @@ class TrainSchedule {
         private String stationArrival;
         private String timeDispatch;
         private String timeArrival;
-        private MyDayOfTheWeek[] days;
-        private DayOfWeek day;
+        private DayOfWeek dayOfDispatch;
 
-        public Train(int number) {
-            this.number = number;
-        }
+//        Train(int number) {
+//            this.number = number;
+//        }
 
         public int getNumber() {
             return number;
@@ -50,54 +89,73 @@ class TrainSchedule {
             this.number = number;
         }
 
-        public String getStationDispatch() {
+        String getStationDispatch() {
             return stationDispatch;
         }
 
-        public void setStationDispatch(String stationDispatch) {
+        void setStationDispatch(String stationDispatch) {
             this.stationDispatch = stationDispatch;
         }
 
-        public String getStationArrival() {
+        String getStationArrival() {
             return stationArrival;
         }
 
-        public void setStationArrival(String stationArrival) {
+        void setStationArrival(String stationArrival) {
             this.stationArrival = stationArrival;
         }
 
-        public String getTimeDispatch() {
+        String getTimeDispatch() {
             return timeDispatch;
         }
 
-        public void setTimeDispatch(String timeDispatch) {
+        void setTimeDispatch(String timeDispatch) {
             this.timeDispatch = timeDispatch;
         }
 
-        public String getTimeArrival() {
+        String getTimeArrival() {
             return timeArrival;
         }
 
-        public void setTimeArrival(String timeArrival) {
+        void setTimeArrival(String timeArrival) {
             this.timeArrival = timeArrival;
         }
 
-        public MyDayOfTheWeek[] getDays() {
-            return days;
+        DayOfWeek getDayOfDispatch() {
+            return dayOfDispatch;
         }
 
-        public void setDays(MyDayOfTheWeek[] days) {
-            this.days = days;
+        void setDayOfDispatch(DayOfWeek dayOfDispatch) {
+            this.dayOfDispatch = dayOfDispatch;
         }
 
         @Override
         public String toString() {
-            return "Train number: " + number +
+            return "Train NUMBER: " + number +
                     ", station of dispatch: " + stationDispatch +
                     ", station of arrival: " + stationArrival +
                     ", time of dispatch: " + timeDispatch +
                     ", time of arrival: " + timeArrival +
-                    ", day: " + Arrays.toString(days);
+                    ", day of dispatch: " + dayOfDispatch;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Train train = (Train) o;
+
+            if (stationDispatch != null ? !stationDispatch.equals(train.stationDispatch) : train.stationDispatch != null)
+                return false;
+            return dayOfDispatch == train.dayOfDispatch;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = stationDispatch != null ? stationDispatch.hashCode() : 0;
+            result = 31 * result + (dayOfDispatch != null ? dayOfDispatch.hashCode() : 0);
+            return result;
         }
 
     }

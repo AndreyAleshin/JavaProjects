@@ -35,7 +35,7 @@ public class Main {
             MyDayOfTheWeek today = MyDayOfTheWeek.valueOf(scanner.nextLine().toUpperCase());
             System.out.println("Next day is: " + today.nextDay());
         } catch (IllegalArgumentException e) {
-            System.out.println("Please type correct day of the week");
+            System.out.println("ERROR! Please type correct day of the week");
         }
 
     }
