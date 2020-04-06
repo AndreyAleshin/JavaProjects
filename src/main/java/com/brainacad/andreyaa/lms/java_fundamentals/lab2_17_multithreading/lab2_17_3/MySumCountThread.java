@@ -1,11 +1,11 @@
-package com.brainacad.andreyaa.lms.java_fundamentals.lab2_17_multithreading.testthread2;
+package com.brainacad.andreyaa.lms.java_fundamentals.lab2_17_multithreading.lab2_17_3;
 
-public class MySumCount extends Thread {
+class MySumCountThread extends Thread {
 
-    int startIndex;
-    int stopIndex;
-    int[] array;
-    long resultSum;
+    private int startIndex;
+    private int stopIndex;
+    private int[] array;
+    private long resultSum;
 
     public int getStartIndex() {
         return startIndex;
@@ -34,5 +34,14 @@ public class MySumCount extends Thread {
     @Override
     public void run() {
 
+        if (startIndex >= stopIndex) {
+            return;
+        }
+
+        for (int i = startIndex; i <= stopIndex; i++) {
+            resultSum += array[i];
+        }
+
     }
+
 }

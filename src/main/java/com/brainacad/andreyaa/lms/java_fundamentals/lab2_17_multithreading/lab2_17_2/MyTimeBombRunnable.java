@@ -1,6 +1,6 @@
-package com.brainacad.andreyaa.lms.java_fundamentals.lab2_17_multithreading.testthread1;
+package com.brainacad.andreyaa.lms.java_fundamentals.lab2_17_multithreading.lab2_17_2;
 
-public class MyTimeBombExtendsThread extends Thread {
+class MyTimeBombRunnable implements Runnable {
 
     @Override
     public void run() {
@@ -14,4 +14,5 @@ public class MyTimeBombExtendsThread extends Thread {
         }
         System.out.print("BOOM");
     }
+
 }

@@ -59,13 +59,18 @@ class TrainSchedule {
         }
     }
 
-    // Need to implement equals() method in Train class
-//    Train searchTrain(TrainSchedule trainSchedule, String stationDispatch, DayOfWeek day) {
-//        if (trainSchedule..equals(stationDispatch) && day.equals(day)) {
-//            return new Train();
-//        }
-//        return null;
-//    }
+    void searchTrain(String stationDispatch, DayOfWeek day) {
+
+        System.out.println("Searching for a train: station of dispatch - " + stationDispatch +
+                ", day of dispatch - " + day);
+        for (int i = 0; i < trains.length; i++) {
+            if (trains[i].getStationDispatch().equals(stationDispatch) &&
+                    trains[i].getDayOfDispatch().equals(day)) {
+                System.out.println(trains[i]);
+            }
+        }
+
+    }
 
 
     class Train {
@@ -146,7 +151,8 @@ class TrainSchedule {
 
             Train train = (Train) o;
 
-            if (stationDispatch != null ? !stationDispatch.equals(train.stationDispatch) : train.stationDispatch != null)
+            if (stationDispatch != null ? !stationDispatch.
+                    equals(train.stationDispatch) : train.stationDispatch != null)
                 return false;
             return dayOfDispatch == train.dayOfDispatch;
         }

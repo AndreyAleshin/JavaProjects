@@ -1,5 +1,6 @@
 package com.brainacad.andreyaa.lms.java_fundamentals.lab2_13_enums.lab2_13_5;
 
+import java.time.DayOfWeek;
 import java.util.Scanner;
 
 public class Main {
@@ -14,11 +15,8 @@ public class Main {
 
         trainSchedule.addTrain();
         trainSchedule.printTrains();
-//        trainSchedule.searchTrain("Station1", DayOfWeek.SUNDAY);
-
-
-
-
+        System.out.println();
+        trainSchedule.searchTrain("st1", DayOfWeek.SUNDAY);
 
 
     }
