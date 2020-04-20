@@ -1,4 +1,4 @@
-package com.brainacad.andreyaa.lms.java_se.lab1_2_java_serialization;
+package com.brainacad.andreyaa.lms.java_se.lab3_2_java_serialization.lab3_2_1_2_3;
 
 import java.io.Serializable;
 
@@ -6,7 +6,8 @@ public class Employee implements Serializable {
 
     private String name;
     private String address;
-    private transient int SNN;
+//    private int SSN;
+    private transient int SSN;
     private int number;
 
     public String getName() {
@@ -25,12 +26,12 @@ public class Employee implements Serializable {
         this.address = address;
     }
 
-    public int getSNN() {
-        return SNN;
+    public int getSSN() {
+        return SSN;
     }
 
-    public void setSNN(int SNN) {
-        this.SNN = SNN;
+    public void setSSN(int SSN) {
+        this.SSN = SSN;
     }
 
     public int getNumber() {
@@ -43,11 +44,12 @@ public class Employee implements Serializable {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Employee {" +
                 "name: '" + name + '\'' +
                 ", address: '" + address + '\'' +
-                ", SNN: " + SNN +
+                ", SNN: " + SSN +
                 ", number: " + number +
                 '}';
     }
+
 }

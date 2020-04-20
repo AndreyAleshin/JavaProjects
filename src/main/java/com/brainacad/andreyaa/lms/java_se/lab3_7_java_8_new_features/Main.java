@@ -1,8 +1,8 @@
-package com.brainacad.andreyaa.lms.java_se.lab1_7_java_8_new_features;
+package com.brainacad.andreyaa.lms.java_se.lab3_7_java_8_new_features;
 
 import java.util.*;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
 
@@ -24,7 +24,7 @@ public class Main {
 
         // 2 (collections)
         // Without lambda
-        List<String> strings = new ArrayList<String>();
+        List<String> strings = new ArrayList<>();
         strings.add("asdf");
 
         Collections.sort(strings, new Comparator<String>() {
@@ -41,6 +41,6 @@ public class Main {
             System.out.println(s);
         }
 
-
     }
+
 }

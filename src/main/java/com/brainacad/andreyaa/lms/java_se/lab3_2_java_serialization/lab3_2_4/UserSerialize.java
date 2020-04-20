@@ -1,22 +1,23 @@
-package com.brainacad.andreyaa.lms.java_se.lab1_2_java_serialization;
+package com.brainacad.andreyaa.lms.java_se.lab3_2_java_serialization.lab3_2_4;
 
-public class SerializeUser {
+import java.io.Serializable;
+
+class UserSerialize implements Serializable {
 
     private String firstName;
     private String lastName;
     private int age;
 
-    public SerializeUser() {
+    public UserSerialize() {
     }
 
-    public SerializeUser(String firstName, String lastName, int age) {
+    public UserSerialize(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
     public String getFirstName() {
-
         return firstName;
     }
 
@@ -42,10 +43,11 @@ public class SerializeUser {
 
     @Override
     public String toString() {
-        return "SerializeUser{" +
+        return "SerializeUser {" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 '}';
     }
+
 }
