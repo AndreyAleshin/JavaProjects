@@ -3,7 +3,7 @@ package com.brainacad.andreyaa.lms.java_fundamentals.lab2_15_collections.lab2_15
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
 

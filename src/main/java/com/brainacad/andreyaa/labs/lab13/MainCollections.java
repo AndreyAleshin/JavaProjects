@@ -132,10 +132,10 @@ class MainCollections {
         Map<String, Set> map3 = new HashMap<>();
         Set<String> contacts = new HashSet<>();
         contacts.add("067-111-22-33");
-        contacts.add("andrey12.aa@gmail.com");
+        contacts.add("andrey@gmail.com");
         contacts.add("skype-andrey");
 
-        map3.put("Andrey Aleshin", contacts);
+        map3.put("Andrey", contacts);
         System.out.println("Student contacts: ");
         System.out.println(map3);
 

@@ -1,4 +1,4 @@
-package com.brainacad.andreyaa.lms.java_se.lab3_7_java_8_new_features;
+package com.brainacad.andreyaa.lms.java_se.lab3_7_java_8_new_features.lab3_7_1_2_3;
 
 import java.util.*;
 
@@ -6,21 +6,14 @@ class Main {
 
     public static void main(String[] args) {
 
-        // 1 (arrays)
-//        int[] arr = new int[10];
-//
-//        Arrays.sort(arr, new Comparator<Integer>() {
-//            @Override
-//            public int compare(Integer a, Integer b) {
-//                return b.compareTo(a);
-//            }
-//        });
-//
-//        for (int i = 0; i < arr.length; i++) {
-//            int j = (int) (Math.random() * 11);
-//            arr[i] = j;
-//            System.out.print(arr[i] + " ");
-//        }
+        int[] arr = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            int random = (int) (Math.random() * 10);
+            arr[i] = random;
+        }
+        System.out.println(Arrays.toString(arr));
+
+//        Arrays.sort()
 
         // 2 (collections)
         // Without lambda
