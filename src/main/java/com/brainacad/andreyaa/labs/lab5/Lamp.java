@@ -5,7 +5,7 @@ package com.brainacad.andreyaa.labs.lab5;
  *
  * @author Andrey Aleshin
  */
-public class Lamp {
+class Lamp {
 
     private int power;
     private String lampType;

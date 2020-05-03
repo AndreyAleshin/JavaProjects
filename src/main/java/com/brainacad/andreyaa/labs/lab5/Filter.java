@@ -5,7 +5,7 @@ package com.brainacad.andreyaa.labs.lab5;
  *
  * @author Andrey Aleshin
  */
-public class Filter {
+class Filter {
 
     private int power;
     private int performance;
@@ -27,6 +27,5 @@ public class Filter {
     public void setPerformance(int performance) {
         this.performance = performance;
     }
-
 
 }

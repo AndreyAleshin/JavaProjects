@@ -5,7 +5,7 @@ package com.brainacad.andreyaa.labs.lab5;
  *
  * @author Andrey Aleshin
  */
-public class Feeder {
+class Feeder {
 
     private int volume;
     private String model;

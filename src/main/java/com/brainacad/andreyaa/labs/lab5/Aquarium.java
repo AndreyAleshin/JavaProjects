@@ -5,7 +5,7 @@ package com.brainacad.andreyaa.labs.lab5;
  *
  * @author Andrey Aleshin
  */
-public class Aquarium {
+class Aquarium {
 
     private int height;
     private int width;
@@ -50,7 +50,6 @@ public class Aquarium {
     public double waterVolume() {
         // При нашей высоте в 60 сантиметров, чуть менее 10% объема ёмкости припадает на 5-сантиметровые стяжки
         return aquariumVolume() - aquariumVolume() * 0.1;
-
-
     }
+
 }

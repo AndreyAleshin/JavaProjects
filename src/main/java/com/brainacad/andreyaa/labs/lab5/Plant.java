@@ -5,7 +5,7 @@ package com.brainacad.andreyaa.labs.lab5;
  *
  * @author Andrey Aleshin
  */
-public class Plant {
+class Plant {
 
     private int height;
     private String type;
@@ -23,4 +23,5 @@ public class Plant {
     public void setType(String type) {
         this.type = type;
     }
+
 }

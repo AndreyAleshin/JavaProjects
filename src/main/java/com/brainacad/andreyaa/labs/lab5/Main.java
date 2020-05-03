@@ -1,6 +1,6 @@
 package com.brainacad.andreyaa.labs.lab5;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
 
@@ -65,4 +65,5 @@ public class Main {
         System.out.println();
 
     }
+
 }

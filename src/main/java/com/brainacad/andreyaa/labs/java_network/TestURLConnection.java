@@ -5,7 +5,7 @@ import java.net.*;
 import java.io.*;
 import java.util.Date;
 
-public class TestURLConnection {
+class TestURLConnection {
 
     public static void main(String[] args) throws Exception {
 
@@ -30,5 +30,7 @@ public class TestURLConnection {
         } else {
             System.out.println("No Content Available");
         }
+
     }
+
 }

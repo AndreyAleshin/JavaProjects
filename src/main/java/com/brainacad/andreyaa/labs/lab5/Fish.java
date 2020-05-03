@@ -5,7 +5,7 @@ package com.brainacad.andreyaa.labs.lab5;
  *
  * @author Andrey Aleshin
  */
-public class Fish {
+class Fish {
 
     private int length;
     private String color;
@@ -30,4 +30,5 @@ public class Fish {
     public void setColor(String color) {
         this.color = color;
     }
+
 }
