@@ -16,12 +16,11 @@ class MyClient {
     }
 
     MyClient(String host, int port) {
-
         try (Socket clientSocket = new Socket(host, port);
              ObjectOutputStream clientOOS = new ObjectOutputStream(clientSocket.getOutputStream());
              ObjectInputStream clientOIS = new ObjectInputStream(clientSocket.getInputStream())) {
 
-            Student student = new Student("A", "asd", 1);
+            Student student = new Student("A", "Java", 1);
             System.out.println(student);
 
             clientOOS.writeObject(student);
@@ -33,7 +32,6 @@ class MyClient {
         } catch (IOException | ClassNotFoundException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
 }

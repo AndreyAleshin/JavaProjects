@@ -1,6 +1,7 @@
 package com.brainacad.andreyaa.lms.java_se.lab3_8_java_networking.lab3_8_1_2;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 class Student implements Serializable {
 
@@ -64,9 +65,9 @@ class Student implements Serializable {
         Student student = (Student) o;
 
         if (id != student.id) return false;
-        if (name != null ? !name.equals(student.name) : student.name != null) return false;
-        if (course != null ? !course.equals(student.course) : student.course != null) return false;
-        return access != null ? access.equals(student.access) : student.access == null;
+        if (!Objects.equals(name, student.name)) return false;
+        if (!Objects.equals(course, student.course)) return false;
+        return Objects.equals(access, student.access);
     }
 
     @Override

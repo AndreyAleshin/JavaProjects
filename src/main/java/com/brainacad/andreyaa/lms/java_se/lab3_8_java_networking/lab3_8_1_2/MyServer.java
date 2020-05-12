@@ -8,6 +8,9 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Multithreaded server
+ */
 class MyServer {
 
     public static void main(String[] args) {
@@ -19,8 +22,7 @@ class MyServer {
 
     }
 
-    MyServer(int port) {
-
+    private MyServer(int port) {
         try (ServerSocket serverSocket = new ServerSocket(port)) {
 
             System.out.println("Server awaiting connections...");
@@ -33,7 +35,7 @@ class MyServer {
                 ObjectInputStream serverOIS = new ObjectInputStream(clientSocket.getInputStream());
                 ObjectOutputStream serverOOS = new ObjectOutputStream(clientSocket.getOutputStream());
 
-                Thread thread = new ClientHandler(clientSocket, serverOIS, serverOOS);
+                Thread thread = new ClientThread(clientSocket, serverOIS, serverOOS);
                 thread.start();
 
                 System.out.println("Assigning new thread for this client.");
@@ -43,20 +45,19 @@ class MyServer {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
 }
 
 
-class ClientHandler extends Thread {
+class ClientThread extends Thread {
 
     private final Socket clientSocket;
     private final ObjectInputStream serverOIS;
     private final ObjectOutputStream serverOOS;
     private List<Student> users = new ArrayList<>();
 
-    ClientHandler(Socket clientSocket, ObjectInputStream serverOIS, ObjectOutputStream serverOOS) {
+    ClientThread(Socket clientSocket, ObjectInputStream serverOIS, ObjectOutputStream serverOOS) {
         this.clientSocket = clientSocket;
         this.serverOIS = serverOIS;
         this.serverOOS = serverOOS;
